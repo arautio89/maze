@@ -52,6 +52,7 @@ class MainMenu:
         #if self.scene_manager.current_scene_id == 'main menu':
         if self.scene_manager.current == self:
             if symbol == pyglet.window.key.ESCAPE:
+                self.quit_game()
                 return pyglet.event.EVENT_HANDLED
 
         if symbol == pyglet.window.key.SPACE:

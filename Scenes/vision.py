@@ -49,8 +49,11 @@ class Vision:
 
             # Neighboring Cells for Current Cell
             self.fov[cx][cy] = 3
-            self.fov[cx + offx][cy + offy] = 1
-            self.fov[cx - offx][cy - offy] = 1
+            
+            if 0 <= cx + offx < TILES_HOR and 0 <= cy + offy < TILES_VER:
+                self.fov[cx + offx][cy + offy] = 1
+            if 0 <= cx - offx < TILES_HOR and 0 <= cy - offy < TILES_VER:
+                self.fov[cx - offx][cy - offy] = 1
             
             if tiles[cx][cy].blocked:
                 break
