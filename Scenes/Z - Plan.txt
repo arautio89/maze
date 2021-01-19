@@ -1,0 +1,32 @@
+
+Scenes
+======
+Start Menu / Main Menu
+Options?
+Game
+Intro
+High Scores
+
+Game Scene
+==========
+Batch
+.my_batch
+.tiles_group
+.cre_group
+
+Model / Level
+-------------
+.tiles
+.creatures
+.items (includes traps on ground?)
+.stains??? (included in tiles?)
+
+Tile
+====
+.occupant
+.items (Items on the floor tile)
+.traps ? (caltrops, bear traps, mirrors?)
+.stains (stains of blood or other substances)
+.smells (smells and scents on the tile)
+.light (how is the tile lit?)
+
